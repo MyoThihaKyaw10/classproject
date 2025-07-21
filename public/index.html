@@ -3,14 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Day10</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body>
+<body class="font-sans antialiased text-gray-700">
+    <header id="header" class="fixed top-0 left-0 w-full z-50 bg-white shadow">
+        <div class="container mx-auto flex items-center justify-between p-4">
+            <h1 class="text-2xl font-bold text-blue-600">Medilab</h1>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="#hero" class="hover:text-blue-500">Home</a>
+                <a href="#about" class="hover:text-blue-500">About</a>
+                <a href="#services" class="hover:text-blue-500">Services</a>
+                <a href="#departments" class="hover:text-blue-500">Departments</a>
+                <a href="#doctors" class="hover:text-blue-500">Doctors</a>
+                <a href="#contact" class="hover:text-blue-500">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-blue-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-4 py-2 space-y-2">
+            <a href="#hero" class="block text-sm">Home</a>
+            <a href="#about" class="block text-sm">About</a>
+            <a href="#services" class="block text-sm">Services</a>
+            <a href="#departments" class="block text-sm">Departments</a>
+            <a href="#doctors" class="block text-sm">Doctors</a>
+            <a href="#contact" class="block text-sm">Contact</a>
+        </div>
+    </header>
 
-    <h3>Title</h3>
-
-    <h3>title2
-        
-    </h3>
-</body>
-</html>
+  <!-- Hero Section -->
+    <section id="hero" class="h-screen flex items-center justify-center bg-blue-100 text-center px-4 pt-20">
+        <div>
+            <h2 class="text-4xl md:text-5xl font-bold text-blue-700">Welcome to Medilab</h2>
+            <p class="mt-4 text-lg text-gray-600">We are a team of talented doctors making your life healthier.</p>
+            <a href="#about" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">Get Started</a>
+        </div>
+    </section>
