@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    :root {
+        --logoFont: "Dancing Script", cursive;
+        --titleFont: "Lato", sans-serif;
+        --headingFont: "Poppins", sans-serif;
+        --black: #212121;
+        --deep-blue: #2c4964;
+        --white: #fff;
+        --orange: #ff9933;
+        --gray: #ddd;
+        --blue: #00f;
+        --red: #f00;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-headingFont;
+    }
+
+    h2 {
+        color: var(--deep-blue);
+        font-size: 32px;
+    }
+}
