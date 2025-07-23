@@ -8,42 +8,257 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body class="font-sans antialiased text-gray-700">
-    <header id="header" class="fixed top-0 left-0 w-full z-50 bg-white shadow">
-        <div class="container mx-auto flex items-center justify-between p-4">
-            <h1 class="text-2xl font-bold text-blue-600">Medilab</h1>
-            <nav class="hidden md:flex space-x-6 text-sm font-medium">
-                <a href="#hero" class="hover:text-blue-500">Home</a>
-                <a href="#about" class="hover:text-blue-500">About</a>
-                <a href="#services" class="hover:text-blue-500">Services</a>
-                <a href="#departments" class="hover:text-blue-500">Departments</a>
-                <a href="#doctors" class="hover:text-blue-500">Doctors</a>
-                <a href="#contact" class="hover:text-blue-500">Contact</a>
-            </nav>
-            <button id="mobile-menu-button" class="md:hidden text-blue-600 focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M4 6h16M4 12h16M4 18h16"/>
-                </svg>
-            </button>
-        </div>
-        <div id="mobile-menu" class="hidden md:hidden bg-white px-4 py-2 space-y-2">
-            <a href="#hero" class="block text-sm">Home</a>
-            <a href="#about" class="block text-sm">About</a>
-            <a href="#services" class="block text-sm">Services</a>
-            <a href="#departments" class="block text-sm">Departments</a>
-            <a href="#doctors" class="block text-sm">Doctors</a>
-            <a href="#contact" class="block text-sm">Contact</a>
-        </div>
+<!-- Header -->
+    <header class="fixed top-0 left-0 w-full bg-white shadow z-50">
+    <div class="mx-auto flex items-center justify-between px-6 py-4">
+        <h1 class="text-3xl font-bold text-deepBlue tracking-wide">Medilab</h1>
+        <nav class="flex space-x-6 text-sm font-medium text-gray-700">
+        <a href="#hero" class="relative pb-1 hover:text-skyblue after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-skyblue after:transition-all after:duration-300 hover:after:w-full">Home</a>
+        <a href="#about" class="relative pb-1 hover:text-skyblue after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-skyblue after:transition-all after:duration-300 hover:after:w-full">About</a>
+        <a href="#services" class="relative pb-1 hover:text-skyblue after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-skyblue after:transition-all after:duration-300 hover:after:w-full">Services</a>
+        <a href="#departments" class="relative pb-1 hover:text-skyblue after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-skyblue after:transition-all after:duration-300 hover:after:w-full">Departments</a>
+        <a href="#doctors" class="relative pb-1 hover:text-skyblue after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-skyblue after:transition-all after:duration-300 hover:after:w-full">Doctors</a>
+        <a href="#contact" class="relative pb-1 hover:text-skyblue after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-skyblue after:transition-all after:duration-300 hover:after:w-full">Contact</a>
+        </nav>
+        <button class="px-6 py-2 bg-skyblue text-white rounded-full"><a>Make an Appointment</a></button>
+    </div>
     </header>
 
   <!-- Hero Section -->
-    <section id="hero" class="h-screen flex items-center justify-center bg-blue-100 text-center px-4 pt-20">
-        <div>
-            <h2 class="text-4xl md:text-5xl font-bold text-blue-700">Welcome to Medilab</h2>
-            <p class="mt-4 text-md text-gray-600">We are a team of talented doctors making your life healthier.</p>
-            <a href="#about" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition">Get Started</a>
+    <section id="hero" class="h-screen bg-blue-50 flex justify-center pt-32 bg-cover bg-center" style="background-image: url(./assets/images/hero-bg.jpg);">
+        <!-- <div class="text-center px-4 max-w-2xl">
+            <h2 class="text-4xl md:text-5xl font-bold text-blue-700 leading-tight mb-4">Welcome to Medilab</h2>
+            <p class="text-gray-600 text-lg mb-6">
+            We are a team of talented doctors making life healthier.
+            </p>
+        </div> -->
+        <div class="container">
+            <h2 class="text-5xl font-bold">WELCOME TO MEDILAB</h2>
+            <p>We are team of talented designers making webistes with Bootstrap</p>
+        <div class="flex gap-6 mt-6 items-center">
+            <div class="flex flex-wrap text-white px-6 py-6 max-h-96 max-w-80 bg-skyblue rounded justify-center text-center">
+                <h3 class="mb-3 font-bold text-2xl">Why Choose Medilab?</h3>
+                <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro asperiores architecto distinctio ullam dolorum cupiditate nesciunt adipisci corporis sequi consequatur, perspiciatis saepe iusto dolor ipsa aperiam velit harum reprehenderit aliquid.</p>
+                <button class="px-6 py-2 bg-white text-skyblue rounded-full">Learn More</button>
+            </div>
+            <div class="flex flex-wrap bg-white px-6 py-6 h-64 rounded justify-center text-center">
+                <i class="fa-solid fa-clipboard-list fa-2xl text-skyblue mt-5"></i>
+                <h4 class="text-deepBlue font-bold text-lg">Corporis voluptates officia eiusmod</h4>
+                <p class="text-sm">Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+            </div>
+            <div class="flex flex-wrap bg-white px-6 py-6 h-64 rounded justify-center text-center">
+                <i class="fa-solid fa-diamond fa-2xl text-skyblue mt-5"></i>
+                <h4 class="text-deepBlue font-bold text-lg">Ullamco laboris ladore pan</h4>
+                <p class="text-sm">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+            </div>
+            <div class="flex flex-wrap bg-white px-6 py-6 h-64 rounded justify-center text-center">
+                <i class="fa-solid fa-database fa-2xl text-skyblue mt-5"></i>
+                <h4 class="text-deepBlue font-bold text-lg">Labore consequatur incidid dolore</h4>
+                <p class="text-sm">Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+            </div>
         </div>
+        </div>
+    </section>
+
+<!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6 md:px-0">
+            <div class="flex items-center gap-12">
+            <!-- Image -->
+                <div class="w-1/2">
+                    <img src="assets/images/about.jpg" alt="About Us" class="rounded-lg shadow-md w-full h-auto">
+                </div>
+            <!-- Content -->
+                <div class="w-1/2">
+                    <h3 class="text-3xl font-bold text-deepBlue mb-4">About Us</h3>
+                    <p class="text-gray-600 mb-4">
+                    Dolor iure expedita id fuga asperiores qui sunt consequatur minima. Quidem voluptas deleniti. Sit quia molestiae quia quas qui magnam itaque veritatis dolores. Corrupti totam ut eius incidunt reiciendis veritatis asperiores placeat.
+                    </p>
+                    <ul class="list-inside text-gray-700 space-y-2 list-none">
+                        <li class="text-deepBlue font-bold text-lg">Ullamco laboris nisi ut aliquip consequat</li>
+                        <li class="text-deepBlue font-bold text-lg">Magnam soluta odio exercitationem reprehenderi</li>
+                        <li class="text-deepBlue font-bold text-lg">Voluptatem et qui exercitationem</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COUNTS SECTION -->
+    <section class="bg-lightblue py-16">
+        <div class="container max-w-7xl mx-auto grid grid-cols-4 gap-8 text-center px-4">
+        
+        <!-- Box 1 -->
+        <div class="relative bg-white rounded-lg shadow-md pt-12 pb-6">
+        <div class="absolute -top-6 left-1/2 -translate-x-1/2">
+            <div class="bg-skyblue text-white w-12 h-12 flex items-center justify-center rounded-full text-xl shadow">
+            <i class="fas fa-user-md"></i>
+            </div>
+        </div>
+        <h3 class="text-3xl font-bold text-gray-800 mt-4 count">85</h3>
+        <p class="text-gray-500 mt-2">Doctors</p>
+        </div>
+
+        <!-- Box 2 -->
+        <div class="relative bg-white rounded-lg shadow-md pt-12 pb-6">
+        <div class="absolute -top-6 left-1/2 -translate-x-1/2">
+            <div class="bg-skyblue text-white w-12 h-12 flex items-center justify-center rounded-full text-xl shadow">
+            <i class="fas fa-hospital-alt"></i>
+            </div>
+        </div>
+        <h3 class="text-3xl font-bold text-gray-800 mt-4 count">18</h3>
+        <p class="text-gray-500 mt-2">Departments</p>
+        </div>
+
+        <!-- Box 3 -->
+        <div class="relative bg-white rounded-lg shadow-md pt-12 pb-6">
+        <div class="absolute -top-6 left-1/2 -translate-x-1/2">
+            <div class="bg-skyblue text-white w-12 h-12 flex items-center justify-center rounded-full text-xl shadow">
+            <i class="fas fa-flask"></i>
+            </div>
+        </div>
+        <h3 class="text-3xl font-bold text-gray-800 mt-4 count">12</h3>
+        <p class="text-gray-500 mt-2">Research Labs</p>
+        </div>
+
+        <!-- Box 4 -->
+        <div class="relative bg-white rounded-lg shadow-md pt-12 pb-6">
+        <div class="absolute -top-6 left-1/2 -translate-x-1/2">
+            <div class="bg-skyblue text-white w-12 h-12 flex items-center justify-center rounded-full text-xl shadow">
+            <i class="fas fa-award"></i>
+            </div>
+        </div>
+        <h3 class="text-3xl font-bold text-gray-800 mt-4 count">150</h3>
+        <p class="text-gray-500 mt-2">Awards</p>
+        </div>
+
+    </div>
+    </section>
+
+
+    <section id="services" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-blue-700 ">Services</h2>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+                    Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Service Box -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 flex flex-col items-center justify-center text-center h-64">
+                    <div class="text-4xl mb-4">
+                        <i class="fas fa-heartbeat text-skyblue"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold text-deepBlue mb-2">Lorem Ipsum</h4>
+                    <p class="text-gray-600 text-sm">
+                        Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 flex flex-col items-center justify-center text-center h-64">
+                    <div class="text-4xl mb-4">
+                    <i class="fas fa-pills text-skyblue"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-2 text-deepBlue">Sed ut perspiciatis</h4>
+                    <p class="text-gray-600 text-sm">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 flex flex-col items-center justify-center text-center h-64">
+                    <div class="text-4xl mb-4">
+                    <i class="fas fa-hospital-user text-skyblue"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-2 text-deepBlue">Magni Dolores</h4>
+                    <p class="text-gray-600 text-sm">
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 flex flex-col items-center justify-center text-center h-64">
+                    <div class="text-4xl mb-4">
+                    <i class="fas fa-dna text-skyblue"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-2 text-deepBlue">Nemo Enim</h4>
+                    <p class="text-gray-600 text-sm">
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 flex flex-col items-center justify-center text-center h-64">
+                    <div class="text-4xl mb-4">
+                    <i class="fas fa-wheelchair text-skyblue"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-2 text-deepBlue">Dele Cardo</h4>
+                    <p class="text-gray-600 text-sm">
+                    Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 flex flex-col items-center justify-center text-center h-64">
+                    <div class="text-4xl mb-4">
+                    <i class="fas fa-notes-medical text-skyblue"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-2 text-deepBlue">Divera Don</h4>
+                    <p class="text-gray-600 text-sm">
+                    Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="appointment" class="w-full bg-white py-16">
+    <div class="max-w-6xl mx-auto px-8">
+        <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-blue-700 mb-2">Appointment</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        </div>
+
+        <form action="#" class="bg-white shadow-xl rounded-lg p-10 space-y-6">
+        <div class="w-full grid grid-cols-3 gap-6">
+            <div>
+            <input type="text" name="name" class="w-full border border-gray rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your Name" required>
+            </div>
+            <div>
+            <input type="email" name="email" class="w-full border border-gray rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your Email" required>
+            </div>
+            <div>
+            <input type="text" name="phone" class="w-full border border-gray rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your Phone" required>
+            </div>
+            <div>
+            <input type="date" name="date" class="w-full border border-gray rounded-lg px-4 py-3 text-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+            </div>
+            <div>
+            <select name="department" class="w-full border border-gray rounded-lg px-4 py-3 text-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                <option value="">Select Department</option>
+                <option value="Department 1">Department 1</option>
+                <option value="Department 2">Department 2</option>
+                <option value="Department 3">Department 3</option>
+            </select>
+            </div>
+            <div>
+            <select name="doctor" class="w-full border border-gray rounded-lg px-4 py-3 text-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                <option value="">Select Doctor</option>
+                <option value="Doctor 1">Doctor 1</option>
+                <option value="Doctor 2">Doctor 2</option>
+                <option value="Doctor 3">Doctor 3</option>
+            </select>
+            </div>
+        </div>
+
+        <div>
+            <textarea name="message" rows="6" class="w-full border border-gray rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Message (Optional)"></textarea>
+        </div>
+
+        <div class="text-center">
+            <button type="submit" class="bg-skyblue hover:bg-blue-700 text-white px-6 py-2 rounded-full transition duration-300">
+            Make an Appointment
+            </button>
+        </div>
+        </form>
+    </div>
     </section>
 
 <!-- waiyan -->

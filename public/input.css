@@ -17,16 +17,25 @@
         --lightGray: #808080;
         --quest-back: #eef5fc;
         --light-blue: #55559b;
+        --skyblue: #1977CC;
+        --lightblue: #f1f7fc;
     }
 
-    /* waiyan */
 
     h1, h2, h3, h4, h5, h6 {
         @apply font-headingFont;
 
     }
 
+    h2 {
+        color: var(--deep-blue);
+        font-size: 32px;
+    }
+
 }
+
+/* waiyan */
+
 
 @layer components {
     

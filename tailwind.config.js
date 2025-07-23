@@ -20,7 +20,9 @@ module.exports = {
           deepBlue: "var(--deep-blue)",
           lightGray: "var(--lightGray)",
           questBack: "var(--quest-back)",
-          lightBlue: "var(--light-blue)"
+          lightBlue: "var(--light-blue)",
+          skyblue: "var(--skyblue)",
+          lightblue: "var(--lightblue)"
         },
 
         spacing: {
