@@ -8,20 +8,115 @@
         --titleFont: "Lato", sans-serif;
         --headingFont: "Poppins", sans-serif;
         --black: #212121;
-        --deep-blue: #2c4964;
+        --deep-blue: #263f56;
         --white: #fff;
         --orange: #ff9933;
-        --gray: #ddd;
+        --gray: #4e4949;
         --blue: #00f;
         --red: #f00;
+        --lightGray: #808080;
+        --quest-back: #eef5fc;
+        --light-blue: #55559b;
     }
+
+    /* waiyan */
 
     h1, h2, h3, h4, h5, h6 {
         @apply font-headingFont;
+
     }
 
-    h2 {
-        color: var(--deep-blue);
-        font-size: 32px;
+}
+
+@layer components {
+    
+    .cmn-ttl {
+        text-align: center;
     }
+
+    .container {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .cmn-ttl::before {
+        content: '';
+        display: block;
+        width: 160px;
+        height: 1px;
+        background-color: var(--gray);
+        position: absolute;
+        top: 130%;
+        left: 44.5%;
+    }
+
+    .cmn-ttl::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 70px;
+        height: 3px;
+        background-color: var(--blue);
+        top: 129%;
+        left: 47.5%;
+    }
+
+    .dep-list::before {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 255px;
+        width: 1px;
+        background-color: var(--gray);
+        top: 10px;
+        right: 30px
+    }
+
+    .dep-list::after {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 50px;
+        width: 3px;
+        background-color: var(--blue);
+        top: 10px;
+        right: 30px;
+    }
+
+    .dep-list.active0::after {
+        top: 10px;
+        transition-duration: 700ms;
+    }
+
+    .dep-list.active1::after {
+        top: 60px;
+        transition-duration: 700ms;
+    }
+
+    .dep-list.active2::after {
+        top: 110px;
+        transition-duration: 700ms;
+    }
+
+    .dep-list.active3::after {
+        top: 160px;
+        transition-duration: 700ms;
+    }
+
+    .dep-list.active4::after {
+        top: 210px;
+        transition-duration: 700ms;
+    }
+
+    .each-doctor span::after {
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: var(--gray);
+        width: 60px;
+        height: 1px;
+        top: 30px;
+    }
+
+    /* waiyan */
 }
